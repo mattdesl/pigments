@@ -1,0 +1,46 @@
+{
+  "name": "pigments",
+  "version": "1.0.0",
+  "description": "pigment mixing utilities and spectral curves",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "@texel/color": "^1.1.9"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "pigment",
+    "mixing",
+    "mix",
+    "lerp",
+    "srgb",
+    "cmyk",
+    "color",
+    "ink",
+    "kubelka",
+    "munk",
+    "km",
+    "kubelkamunk",
+    "theory",
+    "colour"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/pigments.git"
+  },
+  "homepage": "https://github.com/mattdesl/pigments",
+  "bugs": {
+    "url": "https://github.com/mattdesl/pigments/issues"
+  },
+  "devDependencies": {
+    "mixbox": "^2.0.0",
+    "spectral.js": "^2.0.2"
+  }
+}
