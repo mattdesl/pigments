@@ -112,7 +112,7 @@ XYZ_D65_to_LMS = np.asarray([
 # DEFAULT_INTERPOLATION_PARAMS = None
 # DEFAULT_INTERPOLATION_PARAMS = [[0.4453519011908943, 0.42978240210821966], [-0.1466646311316046, -0.15479776554856595], [-0.3033304381844724, -0.3110131988323558], [0.3030503125818883, 0.34924068176182155]] 
 DEFAULT_INTERPOLATION_PARAMS = None
-# DEFAULT_INTERPOLATION_PARAMS = [[0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]] 
+# DEFAULT_INTERPOLATION_PARAMS = [[0.5, 0.5], [0.5, 0.5], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]] 
 
 def normalize_KS(K, S):
     # Convert to NumPy arrays for easier manipulation
@@ -133,7 +133,7 @@ def normalize_KS(K, S):
     return K_norm, S_norm
 
 def load_standard_K_S ():
-  with open('data/adjusted-primaries-optimized-feb13-black.json', 'r') as json_file:
+  with open('data/adjusted-primaries-optimized-feb17-contrast.json', 'r') as json_file:
     ksdata = json.load(json_file)
     K = np.array(ksdata['K'], dtype=dtype)
     S = np.array(ksdata['S'], dtype=dtype)

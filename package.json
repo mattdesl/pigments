@@ -13,7 +13,7 @@
     "@texel/color": "^1.1.9"
   },
   "scripts": {
-    "test": "node test.js"
+    "train": "python3 scripts/model-data.py && python3 scripts/model-train.py && python3 scripts/polynomial-train.py"
   },
   "keywords": [
     "pigment",
@@ -40,6 +40,7 @@
     "url": "https://github.com/mattdesl/pigments/issues"
   },
   "devDependencies": {
+    "canvas-sketch": "^0.7.7",
     "mixbox": "^2.0.0",
     "spectral.js": "^2.0.2"
   }
